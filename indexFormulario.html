@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <link rel="stylesheet" href="style.css">
+	<title>Formulario de registro</title>
+</head>
+<body class="form-body">
+<h1 class="form-inicio">Formulario de registro</h1>
+<form action="registrar.php" method="post" class="form-registrer">
+<h2 class="form-titulo">CREA UNA CUENTA</h2>
+<div class="contenedor-inputs">
+<input type="Text" name="nombre" placeholder="Nombre" class="input-48">
+<input type="text" name="apellidos" placeholder="Apellidos"class="input-48">
+<input type="email"  name="correo" placeholder="Correo" class="input-100" required="">
+<input type="text" name="usuario" placeholder="Usuario"class="input-48">
+<input type="password" name="clave" placeholder="contraseña"class="input-48" required="">
+<input type="text" name="telefono" placeholder="Teléfono"  class="input-100">
+ <button class="enviar" onclick="location.href='https://api.whatsapp.com/send?phone= +593 95 956 6823'">Registrar</button>
+<p class="form-link"> ¿Ya tienes una cuenta? <a href="#">Ingresa aquí</a></p>
+<p></p>
+</div>
+</form>
+</body>
+</html>

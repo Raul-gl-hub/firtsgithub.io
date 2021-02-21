@@ -1,0 +1,558 @@
+body {
+    margin: 0;
+    font-family: 'Libre Franklin', sans-serif;
+    margin: 0 auto;
+    background: #dee2e6;
+}
+
+/*Header section: Contiene logo y menú de opciones*/
+.wrapper {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+  overflow: hidden;
+}
+
+
+}
+
+@keyframes wave {
+  from { transform: rotate(0deg);}
+  from { transform: rotate(360deg);}
+}
+
+
+.header {
+    display: flex;
+    height: 85px;
+    justify-content: space-between;
+    align-items: center;
+    /* background-image: linear-gradient(to  right, #FFFEF9 20% , rgb(176, 243, 169) 50%) ; */
+    background-image: linear-gradient(to  right, #FFFEF9 15%, #1DA1F2 34% ,rgba(10, 244, 244,0.8) 76%) ;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.header-logo {
+    margin: 0;
+    height: 100%;
+}
+
+.header-logo img {
+    width: 148px;
+    height: 100%;
+}
+
+.header-menu {
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-menu ol{
+    list-style: none;
+    display: flex;
+    height: inherit;
+    margin: 0;
+    align-items: center;
+    height: inherit;
+}
+
+.header-menu ol li {
+    margin-right: 25px;
+    height: inherit;
+    width: 20%;
+    text-align: center;
+}
+
+.header-menu ol li:hover {
+    box-shadow: inset 0 -.2em rgba(0,0, 0,0.4);
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    height: inherit;
+    padding: 0 10px;
+    transition: .2s ease;
+    justify-content: center;
+}
+
+.header a:hover {
+    color: #ff3300;
+    font-size: 1.2em;
+}
+
+/*Hero Section: Contiene Slogan y tema principal de la página*/
+
+h1 {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 2.5em;
+    /* background: -webkit-linear-gradient(left top, red, yellow); */
+    /* background: linear-gradient(to top right,#ff004c, #000080); */
+    background: linear-gradient(to bottom left,#00ff88,#00ff5e);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero {
+    display: flex;
+    height: 60vh;
+    width: 100%;
+    background-image: linear-gradient(to  right, #FFFEF9 20% , rgb(176, 243, 169) 50%);
+    margin-top: 1.7px;
+}
+
+.hero-container {
+    background-image: url(https://revistaeducacionvirtual.com/wp-content/uploads/2017/03/cursovirtual-730x514.jpg);
+    height: inherit;
+    width: inherit;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: -50px;
+    display: grid;
+    grid-template: 20% 30% 30% / 50%;
+    align-items: center;
+    justify-items: center;
+    opacity: 0.85;
+    padding-top: 5em;
+}
+
+/*Para Botones*/
+
+.btn {
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    color: antiquewhite;
+    font-size: 1.1em;
+    padding: .6em .8em .8em;
+    margin: 2px;
+    background: #7dc800;
+    cursor: pointer;
+    box-shadow: inset 0 -.2em rgba(0,0, 0,0.2);
+    outline: 0;
+    transition: .2s;
+    will-change: transform;
+}
+
+.btn:active {
+    transform: scale(.8);
+}
+
+/*Contenido*/
+
+.container-gereral {
+    padding: 0 2em;
+    display: inherit;
+    flex: 1;
+    margin: 0 auto;
+    max-width: 1000px;
+    justify-content: inherit;
+    height: inherit;
+    align-items: inherit;
+    flex-wrap: inherit;
+    background: inherit;
+}
+
+h2 {
+    margin: 1em 0 0.5em 0;
+    text-align: center;
+    color:#a61e4d;
+    font-size: 2em;
+}
+
+.present {
+    margin-top: 100px;
+    height: 30%;
+}
+
+.goals {
+    margin: 0;
+}
+
+.present-article {
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(to right, rgba(10, 244, 244,0), rgba(10, 244, 244,0.8), #1DA1F2 );
+    box-shadow:  0.3em 0.3em rgba(0,0, 0,0.4);
+
+}
+
+.present-article:nth-of-type(2) {
+    border-radius: 0;
+    text-align: right;
+}
+
+.present-article:nth-of-type(3) {
+    border-radius: 0 0 20px 20px;
+}
+
+.present-article-details {
+    width: 60%;
+    text-align: justify;
+}
+
+.present-article-details h3 {
+    margin: 0 0 10px 0;
+    color: #ff00e6;
+}
+
+.present-article-image {
+    width: 30%;
+    margin: 0;
+}
+
+.present-article-image img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.goal {
+    padding: 20px;
+}
+.intro{
+  color: black; 
+}
+/*Servicios*/
+
+h3 {
+    margin: 0;
+    color: #ff00e6;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    /* height: 30vh; */
+}
+
+.services-article {
+    background:#4EABD1;
+    border-radius: 20px 20px 0 0;
+    height: 100%;
+}
+
+.services-article.services-details-article {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.services-article.services-details-article img {
+    width: 100%;
+}
+
+.services-details-article table {
+    border: 0;
+    width: 100%;
+}
+
+.services-details-article table td,tr{
+    width: 25%;
+}
+
+.title-row {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.services-article figure {
+    width: 100%;
+    margin: 0;
+    border-radius: inherit;
+}
+.services-article img {
+    width: inherit;
+    height: 250px;
+    object-fit: cover;
+    border-radius: inherit;
+}
+
+.services-article-det{
+    margin: 20px 35px;
+    margin-top: -50px;
+    background: white;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+}
+
+.services-video {
+  width: 100%;
+  height: 0;
+  padding-top: 73.36%;
+  background: transparent;
+  position: relative;
+border-radius: inherit;
+
+}
+
+.youtube-video {
+position: absolute;
+top: 0;
+right: 0;
+left: 0;
+bottom:0;
+width: 100%;
+height: 100%;
+border-radius: inherit;
+}
+
+.services-article-det h3 {
+    color: #00CCCC;
+}
+
+.services-article:nth-of-type(4) {
+    grid-column: 2 / span 1;
+}
+
+/*Footer, contacto*/
+
+.contact {
+  background: #1DA1F2;
+  color: white;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 2em;
+}
+
+.contact-form {
+    text-align: center;
+    display: grid;
+    gap: 2px;
+    flex-wrap: wrap;
+    width: 40%;
+    justify-content: center;
+}
+
+.contact-form h3 {
+    margin: 10px 0;
+}
+
+/*Formulario Principal*/
+
+#contact-title{
+    margin: 5px 0;
+}
+
+.container-main-form {
+    height: 70vh;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0;
+}
+
+.main-form{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.main-form input{
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 5px 20px;
+  text-align: center;
+}
+
+.form-inputs {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    gap: 3px;
+}
+
+.form-inputs label {
+    font-weight: bold;
+}
+
+#solicitud {
+    height: 80px;
+}
+
+.submit {
+    grid-column: 1/-1;
+}
+
+.social {
+    justify-self: center;
+}
+
+.form-label {
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+#input1{
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 5px 20px;
+  background-image: url(./images/email.svg);
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 10px;
+  text-align: center;
+}
+
+#coments {
+    width: 100%;
+}
+
+.social-link {
+  display: inline-block; /* el tag "a" siempre por defecto se usa un display inline */
+  width: 50px;
+  height: 50px;
+  background-size: 50px 50px;
+  margin: 0px 15px;
+}
+
+.social-link.face {
+  background-image: url(./images/facebook.svg);
+}
+.social-link.twit {
+  background-image: url(./images/twitter.svg);
+}
+.social-link.inst {
+  background-image: url(./images/instagram.svg);
+}
+
+
+/*TABLA AFILIADOS*/
+
+table {
+  border-collapse: separate;
+  width: 100%;
+}
+
+table, td, th {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+tbody {
+    text-align: justify;
+}
+
+tr:nth-child(even) {
+  background-color: #82CAFF;
+}
+
+thead {
+    background: #7dc800;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+table img {
+    width: 150px;
+    height: 150px;
+    object-fit: scale-down;
+}
+
+/*Pie de página*/
+
+.pie_pag {
+  background-color: #1D252C;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+.pie_pag a {
+  color: white;
+}
+.login-box{
+  margin: 0;
+  padding: 0;
+  background: url(../images/fondo.jpg);
+}
+.form-body{
+  margin: 0;
+  font-family: sans-serif;
+  background: #204862;
+}
+.form-inicio{
+  color: #fff;
+  text-align: center;
+}
+.form-registrer{
+  width: 95%;
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  border-radius: 7px;
+}
+.form-titulo{
+  background: deepskyblue;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-weight: 100;
+  font-size: 30px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  border-bottom: 5px solid crimson;
+}
+.contenedor-inputs{
+  padding: 10px 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+input{
+  margin-bottom: 15px;
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 3px;
+  border: 1px solid darkgrey;
+}
+.input-48{
+  width: 41%;
+}
+.input-100{
+  width: 100%;
+
+}
+.enviar{
+  background: crimson;
+  color: #fff;
+  margin: auto;
+  padding: 10px 40px;
+  cursor: pointer;
+  border-radius: 7px;
+  font-size: 16px;
+}
+.enviar:active{
+  transform: scale(1.05);
+}
+.form-link{
+  width: 100%;
+  margin: 7px;
+  text-align: center;
+  font-size: 14px;
+}
