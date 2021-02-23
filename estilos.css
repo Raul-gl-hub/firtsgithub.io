@@ -18,7 +18,17 @@ body {
   overflow: hidden;
 }
 
-
+.wave {
+  width: 1000px;
+  height: 1025px;
+  position: absolute;
+  top: -25%;
+  left: 50%;
+  margin-left: -500px;
+  margin-top: -500px;
+  border-radius: 35%;
+  background: rgba(255, 255, 255, .75);
+  animation: wave 15s infinite linear;
 }
 
 @keyframes wave {
@@ -95,12 +105,12 @@ body {
 
 h1 {
     margin: 0;
-    width: 100%;
+    width: 80%;
     text-align: center;
-    font-size: 2.5em;
+    font-size: 3.0em;
     /* background: -webkit-linear-gradient(left top, red, yellow); */
     /* background: linear-gradient(to top right,#ff004c, #000080); */
-    background: linear-gradient(to bottom left,#00ff88,#00ff5e);
+    background: #fffafa;
 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
